@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form id="myform">
+            <h2>Fill Personal Details</h2>
+            <figure>
+                <img src="user.png" id='myprofile' alt="Profile">
+            </figure>
+            <div class="container">
+                <div>
+                    <label for="">First Name </label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div>
+                    <label for="">Last Name </label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </div>
+            <label for="">Age </label>
+            <input type="number" name="age" id="age" required>
+            <br>
+            <label for="city">City </label>
+            <input type="text" name="city" id="city" required>
+            <div class="container">
+                <div>
+                    <label for="state">State </label>
+                    <input type="text" name="state" id="state" required>
+                </div>
+                <div>
+                    <label for="country">Country </label>
+                    <input type="text" name="country" id="country" required>
+                </div>
+            </div>
+            <label for="profile">Profile Picture </label>
+            <input type="file" name="file" id="profile" required>
+            <h3>Contact details</h3>
+            <div class="container">
+                <div>
+                    <label for="email">Email </label>
+                    <input type="email" name=" email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone </label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+            <input type="submit" value="sumit">
+        </form>
+        <div>
+            <h2>User Data</h2>
+            <div id="userdetails"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
